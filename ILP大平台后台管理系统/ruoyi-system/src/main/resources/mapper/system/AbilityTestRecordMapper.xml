@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ruoyi.system.mapper.AbilityTestRecordMapper">
+    
+    <resultMap type="AbilityTestRecord" id="AbilityTestRecordResult">
+        <result property="id"    column="id"    />
+        <result property="userId"    column="user_id"    />
+        <result property="inputContext"    column="input_context"    />
+        <result property="salary"    column="salary"    />
+        <result property="diff"    column="diff"    />
+        <result property="workMode"    column="work_mode"    />
+        <result property="expectSalary"    column="expect_salary"    />
+        <result property="expectCity"    column="expect_city"    />
+    </resultMap>
+
+    <sql id="selectAbilityTestRecordVo">
+        select id, user_id, input_context, salary, diff, work_mode, expect_salary, expect_city from ability_test_record
+    </sql>
+
+    <select id="selectAbilityTestRecordList" parameterType="AbilityTestRecord" resultMap="AbilityTestRecordResult">
+        <include refid="selectAbilityTestRecordVo"/>
+        <where>  
+            <if test="userId != null "> and user_id = #{userId}</if>
+            <if test="inputContext != null  and inputContext != ''"> and input_context = #{inputContext}</if>
+            <if test="workMode != null "> and work_mode = #{workMode}</if>
+            <if test="expectSalary != null "> and expect_salary = #{expectSalary}</if>
+            <if test="expectCity != null  and expectCity != ''"> and expect_city = #{expectCity}</if>
+        </where>
+    </select>
+    
+    <select id="selectAbilityTestRecordById" parameterType="Long" resultMap="AbilityTestRecordResult">
+        <include refid="selectAbilityTestRecordVo"/>
+        where id = #{id}
+    </select>
+        
+    <insert id="insertAbilityTestRecord" parameterType="AbilityTestRecord" useGeneratedKeys="true" keyProperty="id">
+        insert into ability_test_record
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="userId != null">user_id,</if>
+            <if test="inputContext != null and inputContext != ''">input_context,</if>
+            <if test="salary != null">salary,</if>
+            <if test="diff != null">diff,</if>
+            <if test="workMode != null">work_mode,</if>
+            <if test="expectSalary != null">expect_salary,</if>
+            <if test="expectCity != null">expect_city,</if>
+         </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="userId != null">#{userId},</if>
+            <if test="inputContext != null and inputContext != ''">#{inputContext},</if>
+            <if test="salary != null">#{salary},</if>
+            <if test="diff != null">#{diff},</if>
+            <if test="workMode != null">#{workMode},</if>
+            <if test="expectSalary != null">#{expectSalary},</if>
+            <if test="expectCity != null">#{expectCity},</if>
+         </trim>
+    </insert>
+
+    <update id="updateAbilityTestRecord" parameterType="AbilityTestRecord">
+        update ability_test_record
+        <trim prefix="SET" suffixOverrides=",">
+            <if test="userId != null">user_id = #{userId},</if>
+            <if test="inputContext != null and inputContext != ''">input_context = #{inputContext},</if>
+            <if test="salary != null">salary = #{salary},</if>
+            <if test="diff != null">diff = #{diff},</if>
+            <if test="workMode != null">work_mode = #{workMode},</if>
+            <if test="expectSalary != null">expect_salary = #{expectSalary},</if>
+            <if test="expectCity != null">expect_city = #{expectCity},</if>
+        </trim>
+        where id = #{id}
+    </update>
+
+    <delete id="deleteAbilityTestRecordById" parameterType="Long">
+        delete from ability_test_record where id = #{id}
+    </delete>
+
+    <delete id="deleteAbilityTestRecordByIds" parameterType="String">
+        delete from ability_test_record where id in 
+        <foreach item="id" collection="array" open="(" separator="," close=")">
+            #{id}
+        </foreach>
+    </delete>
+</mapper>

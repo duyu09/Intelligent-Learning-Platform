@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ruoyi.system.mapper.ParRecordMapper">
+    
+    <resultMap type="ParRecord" id="ParRecordResult">
+        <result property="id"    column="id"    />
+        <result property="userId"    column="user_id"    />
+        <result property="parMode"    column="par_mode"    />
+        <result property="inputContext"    column="input_context"    />
+        <result property="outputContext"    column="output_context"    />
+        <result property="parTime"    column="par_time"    />
+    </resultMap>
+
+    <sql id="selectParRecordVo">
+        select id, user_id, par_mode, input_context, output_context, par_time from par_record
+    </sql>
+
+    <select id="selectParRecordList" parameterType="ParRecord" resultMap="ParRecordResult">
+        <include refid="selectParRecordVo"/>
+        <where>  
+            <if test="userId != null "> and user_id = #{userId}</if>
+            <if test="inputContext != null  and inputContext != ''"> and input_context = #{inputContext}</if>
+            <if test="outputContext != null  and outputContext != ''"> and output_context = #{outputContext}</if>
+            <if test="parTime != null "> and par_time = #{parTime}</if>
+        </where>
+    </select>
+    
+    <select id="selectParRecordById" parameterType="Long" resultMap="ParRecordResult">
+        <include refid="selectParRecordVo"/>
+        where id = #{id}
+    </select>
+        
+    <insert id="insertParRecord" parameterType="ParRecord" useGeneratedKeys="true" keyProperty="id">
+        insert into par_record
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="userId != null">user_id,</if>
+            <if test="parMode != null">par_mode,</if>
+            <if test="inputContext != null and inputContext != ''">input_context,</if>
+            <if test="outputContext != null">output_context,</if>
+            <if test="parTime != null">par_time,</if>
+         </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="userId != null">#{userId},</if>
+            <if test="parMode != null">#{parMode},</if>
+            <if test="inputContext != null and inputContext != ''">#{inputContext},</if>
+            <if test="outputContext != null">#{outputContext},</if>
+            <if test="parTime != null">#{parTime},</if>
+         </trim>
+    </insert>
+
+    <update id="updateParRecord" parameterType="ParRecord">
+        update par_record
+        <trim prefix="SET" suffixOverrides=",">
+            <if test="userId != null">user_id = #{userId},</if>
+            <if test="parMode != null">par_mode = #{parMode},</if>
+            <if test="inputContext != null and inputContext != ''">input_context = #{inputContext},</if>
+            <if test="outputContext != null">output_context = #{outputContext},</if>
+            <if test="parTime != null">par_time = #{parTime},</if>
+        </trim>
+        where id = #{id}
+    </update>
+
+    <delete id="deleteParRecordById" parameterType="Long">
+        delete from par_record where id = #{id}
+    </delete>
+
+    <delete id="deleteParRecordByIds" parameterType="String">
+        delete from par_record where id in 
+        <foreach item="id" collection="array" open="(" separator="," close=")">
+            #{id}
+        </foreach>
+    </delete>
+</mapper>

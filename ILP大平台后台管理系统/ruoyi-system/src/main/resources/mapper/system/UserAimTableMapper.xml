@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ruoyi.system.mapper.UserAimTableMapper">
+    
+    <resultMap type="UserAimTable" id="UserAimTableResult">
+        <result property="id"    column="id"    />
+        <result property="userId"    column="user_id"    />
+        <result property="aim"    column="aim"    />
+        <result property="aimSetTime"    column="aim_set_time"    />
+    </resultMap>
+
+    <sql id="selectUserAimTableVo">
+        select id, user_id, aim, aim_set_time from user_aim_table
+    </sql>
+
+    <select id="selectUserAimTableList" parameterType="UserAimTable" resultMap="UserAimTableResult">
+        <include refid="selectUserAimTableVo"/>
+        <where>  
+            <if test="userId != null "> and user_id = #{userId}</if>
+            <if test="aim != null  and aim != ''"> and aim = #{aim}</if>
+            <if test="aimSetTime != null "> and aim_set_time = #{aimSetTime}</if>
+        </where>
+    </select>
+    
+    <select id="selectUserAimTableById" parameterType="Long" resultMap="UserAimTableResult">
+        <include refid="selectUserAimTableVo"/>
+        where id = #{id}
+    </select>
+        
+    <insert id="insertUserAimTable" parameterType="UserAimTable" useGeneratedKeys="true" keyProperty="id">
+        insert into user_aim_table
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="userId != null">user_id,</if>
+            <if test="aim != null and aim != ''">aim,</if>
+            <if test="aimSetTime != null">aim_set_time,</if>
+         </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="userId != null">#{userId},</if>
+            <if test="aim != null and aim != ''">#{aim},</if>
+            <if test="aimSetTime != null">#{aimSetTime},</if>
+         </trim>
+    </insert>
+
+    <update id="updateUserAimTable" parameterType="UserAimTable">
+        update user_aim_table
+        <trim prefix="SET" suffixOverrides=",">
+            <if test="userId != null">user_id = #{userId},</if>
+            <if test="aim != null and aim != ''">aim = #{aim},</if>
+            <if test="aimSetTime != null">aim_set_time = #{aimSetTime},</if>
+        </trim>
+        where id = #{id}
+    </update>
+
+    <delete id="deleteUserAimTableById" parameterType="Long">
+        delete from user_aim_table where id = #{id}
+    </delete>
+
+    <delete id="deleteUserAimTableByIds" parameterType="String">
+        delete from user_aim_table where id in 
+        <foreach item="id" collection="array" open="(" separator="," close=")">
+            #{id}
+        </foreach>
+    </delete>
+</mapper>

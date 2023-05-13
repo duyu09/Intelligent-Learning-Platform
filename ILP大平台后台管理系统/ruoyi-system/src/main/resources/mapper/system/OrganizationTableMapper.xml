@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ruoyi.system.mapper.OrganizationTableMapper">
+    
+    <resultMap type="OrganizationTable" id="OrganizationTableResult">
+        <result property="id"    column="id"    />
+        <result property="orgName"    column="org_name"    />
+        <result property="orgAttrib"    column="org_attrib"    />
+        <result property="orgDescription"    column="org_description"    />
+        <result property="orgAddTime"    column="org_add_time"    />
+    </resultMap>
+
+    <sql id="selectOrganizationTableVo">
+        select id, org_name, org_attrib, org_description, org_add_time from organization_table
+    </sql>
+
+    <select id="selectOrganizationTableList" parameterType="OrganizationTable" resultMap="OrganizationTableResult">
+        <include refid="selectOrganizationTableVo"/>
+        <where>  
+            <if test="orgName != null  and orgName != ''"> and org_name like concat('%', #{orgName}, '%')</if>
+            <if test="orgAttrib != null "> and org_attrib = #{orgAttrib}</if>
+            <if test="orgDescription != null  and orgDescription != ''"> and org_description = #{orgDescription}</if>
+            <if test="orgAddTime != null "> and org_add_time = #{orgAddTime}</if>
+        </where>
+    </select>
+    
+    <select id="selectOrganizationTableById" parameterType="Long" resultMap="OrganizationTableResult">
+        <include refid="selectOrganizationTableVo"/>
+        where id = #{id}
+    </select>
+        
+    <insert id="insertOrganizationTable" parameterType="OrganizationTable" useGeneratedKeys="true" keyProperty="id">
+        insert into organization_table
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="orgName != null and orgName != ''">org_name,</if>
+            <if test="orgAttrib != null">org_attrib,</if>
+            <if test="orgDescription != null and orgDescription != ''">org_description,</if>
+            <if test="orgAddTime != null">org_add_time,</if>
+         </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="orgName != null and orgName != ''">#{orgName},</if>
+            <if test="orgAttrib != null">#{orgAttrib},</if>
+            <if test="orgDescription != null and orgDescription != ''">#{orgDescription},</if>
+            <if test="orgAddTime != null">#{orgAddTime},</if>
+         </trim>
+    </insert>
+
+    <update id="updateOrganizationTable" parameterType="OrganizationTable">
+        update organization_table
+        <trim prefix="SET" suffixOverrides=",">
+            <if test="orgName != null and orgName != ''">org_name = #{orgName},</if>
+            <if test="orgAttrib != null">org_attrib = #{orgAttrib},</if>
+            <if test="orgDescription != null and orgDescription != ''">org_description = #{orgDescription},</if>
+            <if test="orgAddTime != null">org_add_time = #{orgAddTime},</if>
+        </trim>
+        where id = #{id}
+    </update>
+
+    <delete id="deleteOrganizationTableById" parameterType="Long">
+        delete from organization_table where id = #{id}
+    </delete>
+
+    <delete id="deleteOrganizationTableByIds" parameterType="String">
+        delete from organization_table where id in 
+        <foreach item="id" collection="array" open="(" separator="," close=")">
+            #{id}
+        </foreach>
+    </delete>
+</mapper>

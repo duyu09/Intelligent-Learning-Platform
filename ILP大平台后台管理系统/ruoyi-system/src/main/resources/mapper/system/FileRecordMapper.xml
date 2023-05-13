@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ruoyi.system.mapper.FileRecordMapper">
+    
+    <resultMap type="FileRecord" id="FileRecordResult">
+        <result property="id"    column="id"    />
+        <result property="userId"    column="user_id"    />
+        <result property="filePath"    column="file_path"    />
+        <result property="fileName"    column="file_name"    />
+        <result property="major"    column="major"    />
+    </resultMap>
+
+    <sql id="selectFileRecordVo">
+        select id, user_id, file_path, file_name, major from file_record
+    </sql>
+
+    <select id="selectFileRecordList" parameterType="FileRecord" resultMap="FileRecordResult">
+        <include refid="selectFileRecordVo"/>
+        <where>  
+            <if test="userId != null "> and user_id = #{userId}</if>
+            <if test="fileName != null  and fileName != ''"> and file_name like concat('%', #{fileName}, '%')</if>
+            <if test="major != null  and major != ''"> and major = #{major}</if>
+        </where>
+    </select>
+    
+    <select id="selectFileRecordById" parameterType="Long" resultMap="FileRecordResult">
+        <include refid="selectFileRecordVo"/>
+        where id = #{id}
+    </select>
+        
+    <insert id="insertFileRecord" parameterType="FileRecord" useGeneratedKeys="true" keyProperty="id">
+        insert into file_record
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="userId != null">user_id,</if>
+            <if test="filePath != null">file_path,</if>
+            <if test="fileName != null">file_name,</if>
+            <if test="major != null">major,</if>
+         </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="userId != null">#{userId},</if>
+            <if test="filePath != null">#{filePath},</if>
+            <if test="fileName != null">#{fileName},</if>
+            <if test="major != null">#{major},</if>
+         </trim>
+    </insert>
+
+    <update id="updateFileRecord" parameterType="FileRecord">
+        update file_record
+        <trim prefix="SET" suffixOverrides=",">
+            <if test="userId != null">user_id = #{userId},</if>
+            <if test="filePath != null">file_path = #{filePath},</if>
+            <if test="fileName != null">file_name = #{fileName},</if>
+            <if test="major != null">major = #{major},</if>
+        </trim>
+        where id = #{id}
+    </update>
+
+    <delete id="deleteFileRecordById" parameterType="Long">
+        delete from file_record where id = #{id}
+    </delete>
+
+    <delete id="deleteFileRecordByIds" parameterType="String">
+        delete from file_record where id in 
+        <foreach item="id" collection="array" open="(" separator="," close=")">
+            #{id}
+        </foreach>
+    </delete>
+</mapper>

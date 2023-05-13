@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ruoyi.system.mapper.ForumMapper">
+    
+    <resultMap type="Forum" id="ForumResult">
+        <result property="id"    column="id"    />
+        <result property="attrib"    column="attrib"    />
+        <result property="forumId"    column="forum_id"    />
+        <result property="floor"    column="floor"    />
+        <result property="itemContext"    column="item_context"    />
+        <result property="publishTime"    column="publish_time"    />
+        <result property="publishUserId"    column="publish_user_id"    />
+        <result property="upvote"    column="upvote"    />
+    </resultMap>
+
+    <sql id="selectForumVo">
+        select id, attrib, forum_id, floor, item_context, publish_time, publish_user_id, upvote from forum_record
+    </sql>
+
+    <select id="selectForumList" parameterType="Forum" resultMap="ForumResult">
+        <include refid="selectForumVo"/>
+        <where>  
+            <if test="attrib != null "> and attrib = #{attrib}</if>
+            <if test="forumId != null "> and forum_id = #{forumId}</if>
+            <if test="floor != null "> and floor = #{floor}</if>
+            <if test="publishTime != null "> and publish_time = #{publishTime}</if>
+            <if test="publishUserId != null "> and publish_user_id = #{publishUserId}</if>
+        </where>
+    </select>
+    
+    <select id="selectForumById" parameterType="Long" resultMap="ForumResult">
+        <include refid="selectForumVo"/>
+        where id = #{id}
+    </select>
+        
+    <insert id="insertForum" parameterType="Forum" useGeneratedKeys="true" keyProperty="id">
+        insert into forum_record
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="attrib != null">attrib,</if>
+            <if test="forumId != null">forum_id,</if>
+            <if test="floor != null">floor,</if>
+            <if test="itemContext != null and itemContext != ''">item_context,</if>
+            <if test="publishTime != null">publish_time,</if>
+            <if test="publishUserId != null">publish_user_id,</if>
+            <if test="upvote != null">upvote,</if>
+         </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="attrib != null">#{attrib},</if>
+            <if test="forumId != null">#{forumId},</if>
+            <if test="floor != null">#{floor},</if>
+            <if test="itemContext != null and itemContext != ''">#{itemContext},</if>
+            <if test="publishTime != null">#{publishTime},</if>
+            <if test="publishUserId != null">#{publishUserId},</if>
+            <if test="upvote != null">#{upvote},</if>
+         </trim>
+    </insert>
+
+    <update id="updateForum" parameterType="Forum">
+        update forum_record
+        <trim prefix="SET" suffixOverrides=",">
+            <if test="attrib != null">attrib = #{attrib},</if>
+            <if test="forumId != null">forum_id = #{forumId},</if>
+            <if test="floor != null">floor = #{floor},</if>
+            <if test="itemContext != null and itemContext != ''">item_context = #{itemContext},</if>
+            <if test="publishTime != null">publish_time = #{publishTime},</if>
+            <if test="publishUserId != null">publish_user_id = #{publishUserId},</if>
+            <if test="upvote != null">upvote = #{upvote},</if>
+        </trim>
+        where id = #{id}
+    </update>
+
+    <delete id="deleteForumById" parameterType="Long">
+        delete from forum_record where id = #{id}
+    </delete>
+
+    <delete id="deleteForumByIds" parameterType="String">
+        delete from forum_record where id in 
+        <foreach item="id" collection="array" open="(" separator="," close=")">
+            #{id}
+        </foreach>
+    </delete>
+</mapper>

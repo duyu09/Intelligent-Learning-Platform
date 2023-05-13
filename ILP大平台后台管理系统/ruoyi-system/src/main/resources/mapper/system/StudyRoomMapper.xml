@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ruoyi.system.mapper.StudyRoomMapper">
+    
+    <resultMap type="StudyRoom" id="StudyRoomResult">
+        <result property="id"    column="id"    />
+        <result property="userId"    column="user_id"    />
+        <result property="floor"    column="floor"    />
+        <result property="site"    column="site"    />
+        <result property="startTime"    column="start_time"    />
+        <result property="context"    column="context"    />
+        <result property="encourage"    column="encourage"    />
+        <result property="length"    column="length"    />
+    </resultMap>
+
+    <sql id="selectStudyRoomVo">
+        select id, user_id, floor, site, start_time, context, encourage, length from study_room
+    </sql>
+
+    <select id="selectStudyRoomList" parameterType="StudyRoom" resultMap="StudyRoomResult">
+        <include refid="selectStudyRoomVo"/>
+        <where>  
+            <if test="userId != null "> and user_id = #{userId}</if>
+            <if test="floor != null "> and floor = #{floor}</if>
+            <if test="site != null "> and site = #{site}</if>
+        </where>
+    </select>
+    
+    <select id="selectStudyRoomById" parameterType="Long" resultMap="StudyRoomResult">
+        <include refid="selectStudyRoomVo"/>
+        where id = #{id}
+    </select>
+        
+    <insert id="insertStudyRoom" parameterType="StudyRoom" useGeneratedKeys="true" keyProperty="id">
+        insert into study_room
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="userId != null">user_id,</if>
+            <if test="floor != null">floor,</if>
+            <if test="site != null">site,</if>
+            <if test="startTime != null">start_time,</if>
+            <if test="context != null">context,</if>
+            <if test="encourage != null">encourage,</if>
+            <if test="length != null">length,</if>
+         </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="userId != null">#{userId},</if>
+            <if test="floor != null">#{floor},</if>
+            <if test="site != null">#{site},</if>
+            <if test="startTime != null">#{startTime},</if>
+            <if test="context != null">#{context},</if>
+            <if test="encourage != null">#{encourage},</if>
+            <if test="length != null">#{length},</if>
+         </trim>
+    </insert>
+
+    <update id="updateStudyRoom" parameterType="StudyRoom">
+        update study_room
+        <trim prefix="SET" suffixOverrides=",">
+            <if test="userId != null">user_id = #{userId},</if>
+            <if test="floor != null">floor = #{floor},</if>
+            <if test="site != null">site = #{site},</if>
+            <if test="startTime != null">start_time = #{startTime},</if>
+            <if test="context != null">context = #{context},</if>
+            <if test="encourage != null">encourage = #{encourage},</if>
+            <if test="length != null">length = #{length},</if>
+        </trim>
+        where id = #{id}
+    </update>
+
+    <delete id="deleteStudyRoomById" parameterType="Long">
+        delete from study_room where id = #{id}
+    </delete>
+
+    <delete id="deleteStudyRoomByIds" parameterType="String">
+        delete from study_room where id in 
+        <foreach item="id" collection="array" open="(" separator="," close=")">
+            #{id}
+        </foreach>
+    </delete>
+</mapper>
