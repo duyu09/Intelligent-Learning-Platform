@@ -7,8 +7,11 @@
 #### 模块安装与运行要求
 
 1.操作系统与硬件平台：不限。
+
 2.开发时软件环境：NodeJS (版本建议>=16.17.1)。
-3.生产环境：CSR:Nginx + 宝塔面板；SSR：NodeJS(版本建议>=16.17.1).
+
+3.生产环境：CSR:Nginx + 宝塔面板；SSR：NodeJS(版本建议>=16.17.1)。
+
 4.浏览器：Chrome，Microsoft Edge，FireFox，Safari等主流浏览器。
 
 #### 模块运行及部署方法
