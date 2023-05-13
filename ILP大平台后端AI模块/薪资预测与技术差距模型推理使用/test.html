@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>接口测试</title>
+    </head>
+    <body align=center>
+        <form action='/Upload' method='post' enctype='multipart/form-data'>
+            <label>调试模式</label><input name="debug" value="1">
+            <select name='imageType'>
+                <option value='jcps'>基础设施破损</option>
+            </select>
+            <input type='file' name='imageFile'>
+            <input type='submit' value='上传图像'>
+        </form>
+    </body>
+</html>
