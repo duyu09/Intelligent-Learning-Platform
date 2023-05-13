@@ -60,3 +60,8 @@ Chrome，Microsoft Edge，FireFox，Safari等主流浏览器均可。
 
 
 ------
+
+### 系统讲解与演示视频
+
+https://github.com/duyu09/Intelligent-Learning-Platform/assets/92843163/1f326518-0399-49ce-9a5d-db7ee2f3ebfc
+
