@@ -58,6 +58,7 @@ Chrome，Microsoft Edge，FireFox，Safari等主流浏览器均可。
 
 - 齐鲁工业大学 计算机科学与技术学部 计算机科学与技术20-2班 袁红太 (学号No.202001020029).
 
+<img src='https://github.com/duyu09/Intelligent-Learning-Platform/assets/92843163/61cf87fd-dd81-4994-b025-6d021446bb65' style="width:25%;">
 
 ------
 
