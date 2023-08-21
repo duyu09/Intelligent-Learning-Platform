@@ -64,7 +64,7 @@ Chrome，Microsoft Edge，FireFox，Safari等主流浏览器均可。
 
 ### 系统讲解与演示视频
 
-https://github.com/duyu09/Intelligent-Learning-Platform/assets/92843163/1f326518-0399-49ce-9a5d-db7ee2f3ebfc
+<video src="https://github.com/duyu09/Intelligent-Learning-Platform/assets/92843163/959649da-8741-4d1a-946c-1e94b5d67d45" controls></video>
 
 ### 访客统计
 
