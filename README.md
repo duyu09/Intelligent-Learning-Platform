@@ -1,8 +1,12 @@
+<p align="center">
+  <img src="https://github.com/duyu09/Intelligent-Learning-Platform/assets/92843163/376cd821-b318-49af-ac63-fb93b645f5fb" style="width:25%;">
+</p>
+<br>
+
 # 我的青春不迷茫 
 ## 基于LLM与回归分析的大学生智能生涯指导与学习大平台
 
 ------
-
 
 #### 系统名称
 
@@ -10,7 +14,7 @@
 
 2.系统简称：我的青春不迷茫 智能学习大平台
 
-3.系统英文名称：Intelligent Learning Platform. (ILP)
+3.系统英文名称：Intelligent Learning Platform Based on LLM & Regression Analysis Algorithms. (简称：_ILP_)
 
 
 #### 用户运行要求
@@ -48,7 +52,7 @@ Chrome，Microsoft Edge，FireFox，Safari等主流浏览器均可。
 
 &copy; 2023 我的青春不迷茫-智能学习大平台 项目开发小组
 
-&copy; 2023 Intelligent Learning Platform Developer Team.
+_Copyright &copy; 2023 Intelligent Learning Platform Developer Team._
 
 小组成员名单(共3人)：
 
@@ -58,13 +62,39 @@ Chrome，Microsoft Edge，FireFox，Safari等主流浏览器均可。
 
 - 齐鲁工业大学 计算机科学与技术学部 计算机科学与技术20-2班 袁红太 (学号No.202001020029).
 
-<img src='https://github.com/duyu09/Intelligent-Learning-Platform/assets/92843163/61cf87fd-dd81-4994-b025-6d021446bb65' style="width:25%;">
+指导教师(共2人)：
+
+- 齐鲁工业大学 计算机科学与技术学部 软件工程系 贾瑞祥老师
+  
+- 国家超级计算济南中心 助理研究员 王迪老师
+
+__*该项目已参加2023年(第16届)中国大学生计算机设计大赛。任何组织或个人若未经本项目开发小组书面同意，禁止商用或用于参加任何性质任何类型的比赛。如有违反上述内容的单位或个人，开发小组将告知其所参加比赛的组织委员会或高校，建议取消其成绩并判处违规侵权抄袭；情节严重的，开发小组将提起诉讼，侵权者将承担中华人民共和国各项法律法规内最大限度的民事责任；触犯中华人民共和国刑法的，开发小组将其交由中国公安机关严肃处理，并积极配合刑事调查。*__
+
+__*The project has participated in the 2023 (16th) China College Student Computer Design Competition. Any organization or individual without the written consent of the project development team is prohibited from commercial use or participation in any type of competition of any nature. If any organization or individual violates the above content, the development team will inform the organizing committee of the competition or the university in which it participated, and recommend that its results be cancelled and sentenced to illegal infringement and plagiarism; If the circumstances are serious, the development team will bring a lawsuit, and the infringer will bear the maximum civil liability within the laws and regulations of the People's Republic of China; If it violates the criminal law of the People's Republic of China, the development team will refer it to the Chinese public security organs for serious handling and actively cooperate with the criminal investigation.*__
 
 ------
 
-### 系统讲解与演示视频
+### ILP软件系统讲解与演示视频
 
-<video src="https://github.com/duyu09/Intelligent-Learning-Platform/assets/92843163/959649da-8741-4d1a-946c-1e94b5d67d45" controls></video>
+https://github.com/duyu09/Intelligent-Learning-Platform/assets/92843163/959649da-8741-4d1a-946c-1e94b5d67d45
+
+------
+
+### 特别感谢
+
+<b>齐鲁工业大学 (山东省科学院)</b>
+
+<img src="https://user-images.githubusercontent.com/92843163/229986960-05c91bf5-e08e-4bd3-89a4-deee3d2dbc6d.svg" style="width:55%;border-radius:20px;">
+
+<b>计算机科学与技术学部 国家超级计算济南中心</b>
+
+<img src="https://github.com/duyu09/Duyu09/assets/92843163/1797adfd-b6f5-4015-a5b7-2a8dfb0d4fa2" style="width:55%;border-radius:20px;">
+<br><br>
+
+<b>齐鲁工业大学 (山东省科学院) 开发者协会</b>.
+
+
+<img src="https://github.com/duyu09/Intelligent-Learning-Platform/assets/92843163/7a554ca6-49b8-4099-b214-4c4ceff7c9a3" style="width:55%;border-radius:20px;">
 
 ### 访客统计
 
