@@ -1,4 +1,5 @@
 <p align="center">
+  <br>
   <img src="https://github.com/duyu09/Intelligent-Learning-Platform/assets/92843163/376cd821-b318-49af-ac63-fb93b645f5fb" style="width:25%;">
 </p>
 <br>
@@ -16,6 +17,9 @@
 
 3.系统英文名称：Intelligent Learning Platform Based on LLM & Regression Analysis Algorithms. (简称：_ILP_)
 
+#### 项目简介
+
+近些年，国内大学生普遍存在的迷茫现象一直是社会广泛关注的问题。虽然这些问题一直存在，但不论是家长还是教师，亦或是学生，几乎没有人能够有效地解决这个问题。并且，国内与之相关的软件产品少之又少，这个空白有待软件开发者们去弥补。于是，我们决定直面“迷茫”，以第16届计算机设计大赛为契机，开发一款针对解决大学生迷茫问题的多功能一站式软件系统，为解决这道“难题”，贡献出我们自己力所能及的力量。
 
 #### 用户运行要求
 
@@ -94,16 +98,22 @@ https://github.com/duyu09/Intelligent-Learning-Platform/assets/92843163/959649da
 
 ### 特别感谢
 
-<b>齐鲁工业大学 (山东省科学院)</b>
+<b>齐鲁工业大学 (山东省科学院).</b>
+
+<b>Qilu University of Technology (ShanDong Academy of Science).</b>
 
 <img src="https://user-images.githubusercontent.com/92843163/229986960-05c91bf5-e08e-4bd3-89a4-deee3d2dbc6d.svg" style="width:55%;border-radius:20px;">
 
-<b>计算机科学与技术学部 国家超级计算济南中心</b>
+<b>计算机科学与技术学部 国家超级计算济南中心.</b>
+
+<b>Faculty of Computer Science and Technology, National Supercomputing Center Jinan.</b>
 
 <img src="https://github.com/duyu09/Duyu09/assets/92843163/1797adfd-b6f5-4015-a5b7-2a8dfb0d4fa2" style="width:55%;border-radius:20px;">
 <br><br>
 
-<b>齐鲁工业大学 (山东省科学院) 开发者协会</b>.
+<b>齐鲁工业大学 (山东省科学院) 开发者协会.</b>
+
+<b>Developer Association of Qilu University of Technology (ShanDong Academy of Science).
 
 
 <img src="https://github.com/duyu09/Intelligent-Learning-Platform/assets/92843163/7a554ca6-49b8-4099-b214-4c4ceff7c9a3" style="width:55%;border-radius:20px;">
