@@ -66,3 +66,8 @@ Chrome，Microsoft Edge，FireFox，Safari等主流浏览器均可。
 
 https://github.com/duyu09/Intelligent-Learning-Platform/assets/92843163/1f326518-0399-49ce-9a5d-db7ee2f3ebfc
 
+### 访客统计
+
+<div><b>Number of Total Visits (All of Duyu09's GitHub Projects): </b><br><img src="https://profile-counter.glitch.me/duyu09/count.svg" /></div> 
+
+<div><b>Number of Total Visits (Intelligent Learning Platform <i><b>ILP</b></i>): </b><br><img src="https://profile-counter.glitch.me/duyu09-ILP/count.svg" /></div> 
