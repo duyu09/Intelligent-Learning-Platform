@@ -68,9 +68,21 @@ _Copyright &copy; 2023 Intelligent Learning Platform Developer Team._
   
 - 国家超级计算济南中心 助理研究员 王迪老师
 
-__*该项目已参加2023年(第16届)中国大学生计算机设计大赛。任何组织或个人禁止闭源商用或闭源参加任何性质任何类型的比赛。如有违反上述内容的单位或个人，开发小组将告知其所参加比赛的组织委员会或高校，建议取消其成绩并判处违规侵权抄袭；情节严重的，开发小组将提起诉讼，侵权者将承担中华人民共和国各项法律法规内最大限度的民事责任；触犯中华人民共和国刑法的，开发小组将其交由中国公安机关严肃处理，并积极配合刑事调查。*__
+ILP软件系统遵守<b><i>GNU AGPL v3.0</i></b>协议开源，请各软件代码使用者阅读以下声明：
 
-__*The project has participated in the 16th China Undergraduate Computer Design Contest in 2023. Any organization or individual is prohibited from using closed-source or participating in any kind of competition in a closed-source manner. In the event of a violation of the above, the development team will inform the organizing committee or university of the competition in which the violation occurred, recommending the cancellation of their results and imposing penalties for infringement and plagiarism. In cases of severe violation, the development team will file a lawsuit, and the infringer will bear the maximum civil liability as prescribed by the laws and regulations of the People's Republic of China. If the violation constitutes a criminal offense under the Criminal Law of the People's Republic of China, the development team will refer the matter to the Chinese public security authorities for serious investigation and will actively cooperate with the criminal investigation.*__
+- __*该项目已参加2023年(第16届)中国大学生计算机设计大赛。*__
+
+- __*任何组织或个人需遵守AGPL-v3.0协议：禁止闭源商用或闭源参加任何性质任何类型的比赛。使用本软件部分或全部源代码的人员需在开发文档以及作品或产品的发行版中醒目地标明本软件(ILP大平台)的著作权标识以及代码资源引用位置。如有违反上述内容的单位或个人，开发小组将告知其所参加比赛的组织委员会或高校，建议取消其成绩并判处违规侵权抄袭；情节严重的，开发小组将提起诉讼，侵权者将承担中华人民共和国各项法律法规内最大限度的民事责任；触犯中华人民共和国刑法的，开发小组将其交由中国公安机关严肃处理，并积极配合刑事调查。*__
+
+- __*您克隆(或通过其他方式获取到)本项目部分或全部源代码时，便意味着您已知晓并充分理解以上全部内容以及AGPL-v3.0协议的全部内容。*__
+
+以下翻译仅供参考，最终以上文中文为准。*(The following translation is for reference only, and the Chinese version above shall prevail.)*
+
+- __*This project has participated in the 16th China College Student Computer Design Contest in 2023.*__
+
+- __*Any organization or individual must comply with the AGPL-v3.0 license: commercial use or participation in any kind of competition while keeping the source code closed is prohibited. Individuals using all or part of this software's source code are required to prominently display the copyright notice and code resource reference of this software (ILP Platform) in the development documentation as well as in the distribution of their work or product. In case of any violation by individuals or organizations mentioned above, the development team will inform the organizing committee or university of the competition they participated in, recommending the cancellation of their results and imposing penalties for infringement and plagiarism. In severe cases, the development team will initiate legal proceedings, and the infringer will bear the maximum civil liability as prescribed by the laws and regulations of the People's Republic of China. If any violation involves the Criminal Law of the People's Republic of China, the development team will report it to the Chinese public security authorities for serious handling and actively cooperate with the criminal investigation.*__
+
+- __*By cloning (or obtaining in any other way) all or part of the source code of this project, it signifies that you are aware of and fully understand all the aforementioned terms and the entire content of the AGPL-v3.0 license.*__
 
 ------
 
