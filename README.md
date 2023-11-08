@@ -11,50 +11,52 @@
 
 #### 系统名称
 
-1.系统全称：我的青春不迷茫-基于LLM与回归分析的大学生智能生涯指导与学习大平台
+- 系统全称：我的青春不迷茫-基于LLM与回归分析的大学生智能生涯指导与学习大平台
 
-2.系统简称：我的青春不迷茫 智能学习大平台
+- 系统简称：我的青春不迷茫 智能学习大平台
 
-3.系统英文名称：Intelligent Learning Platform Based on LLM & Regression Analysis Algorithms. (简称：_ILP_)
+- 系统英文名称：Intelligent Learning Platform Based on LLM & Regression Analysis Algorithms. (简称：_ILP_)
 
 #### 项目简介
 
-近些年，国内大学生普遍存在的迷茫现象一直是社会广泛关注的问题。虽然这些问题一直存在，但不论是家长还是教师，亦或是学生，几乎没有人能够有效地解决这个问题。并且，国内与之相关的软件产品少之又少，这个空白有待软件开发者们去弥补。于是，我们决定直面“迷茫”，以第16届计算机设计大赛为契机，开发一款针对解决大学生迷茫问题的多功能一站式软件系统，为解决这道“难题”，贡献出我们自己力所能及的力量。
+&nbsp;&nbsp;&nbsp;&nbsp;近些年，国内大学生普遍存在的迷茫现象一直是社会广泛关注的问题。虽然这些问题一直存在，但不论是家长还是教师，亦或是学生，几乎没有人能够有效地解决这个问题。并且，国内与之相关的软件产品少之又少，这个空白有待软件开发者们去弥补。于是，我们决定直面“迷茫”，以本次2023年第16届中国大学生计算机设计大赛为契机，开发一款针对解决大学生迷茫问题的多功能一站式软件系统，为解决这道“难题”，贡献出我们自己力所能及的力量。
 
 #### 用户运行要求
 
-Chrome，Microsoft Edge，FireFox，Safari等主流浏览器均可。
+- Chrome，Microsoft Edge，FireFox，Safari等主流浏览器均可。
 
-客户端部署上线地址：http://alpha.ilp.technology
+- 客户端部署上线地址：http://alpha.ilp.technology (大赛结束，现已失效)
 
-后台管理系统部署上线地址：http://admin.ilp.technology
+- 后台管理系统部署上线地址：http://admin.ilp.technology (大赛结束，现已失效)
 
 
 #### 工程各子目录结构
 
-1.ILP大平台前端模块：系统前端的相关代码
+- ILP大平台前端模块：系统前端的相关代码
 
-2.ILP大平台后端Java模块：系统Java后端相关代码
+- ILP大平台后端Java模块：系统Java后端相关代码
 
-3.ILP大平台后端AI模块：系统人工智能模块(大语言模型及薪资预测)相关代码
+- ILP大平台后端AI模块：系统人工智能模块(大语言模型及薪资预测)相关代码
 
-4.ILP大平台后台管理系统：后台管理系统的前端及Java后端相关代码
+- ILP大平台后台管理系统：后台管理系统的前端及Java后端相关代码
 
 
 #### 开发者开发环境要求
 
-我们所有成员的所有开发工作均在Windows操作系统中进行。使用到的IDE有JetBrains IDEA,WebStorm,Visual Studio Code等。开发工作对操作系统的依赖性不大，具体开发环境的要求参见各子目录的README.md文件。
+&nbsp;&nbsp;&nbsp;&nbsp;我们所有成员的所有开发工作均在Windows操作系统中进行。使用到的IDE有JetBrains IDEA,WebStorm,Visual Studio Code等。开发工作对操作系统的依赖性不大，具体开发环境的要求参见各子目录的README.md文件。
 
 #### 系统宏观架构及各模块运行及部署方法
 
-系统采用三端互联双端部署的架构，其中Java后端，数据库以及SSR前端运行于CPU云服务器，ChatGLM-6B大语言模型以及薪资预测技术差距分析模型部署于国家超级计算济南中心的高性能计算集群。
+&nbsp;&nbsp;&nbsp;&nbsp;参赛时，系统采用三端互联双端部署的架构，其中Java后端，数据库以及SSR前端运行于CPU云服务器，ChatGLM-6B大语言模型以及薪资预测技术差距分析模型部署于国家超级计算济南中心的高性能计算集群。
 
 请参见各个模块子目录中的README.md文件。这些文件中将详细描述工程各模块开发与生产的环境要求以及其他必要事项。
 
 
 #### 系统开发者及著作权声明
 
-&copy; 2023 我的青春不迷茫-智能学习大平台 项目开发小组
+&copy; 2023 我的青春不迷茫-基于LLM与回归分析的大学生智能生涯指导与学习大平台 项目设计与研发小组
+
+(在其他文件中简称：我的青春不迷茫-项目开发小组)
 
 _Copyright &copy; 2023 Intelligent Learning Platform Developer Team._
 
@@ -68,9 +70,23 @@ _Copyright &copy; 2023 Intelligent Learning Platform Developer Team._
 
 指导教师(共2人)：
 
-- 齐鲁工业大学 计算机科学与技术学部 软件工程系 贾瑞祥老师
+- 齐鲁工业大学(山东省科学院) 计算机科学与技术学部 软件工程系 贾瑞祥老师
   
-- 国家超级计算济南中心 助理研究员 王迪老师
+- 山东省计算中心(国家超级计算济南中心) 助理研究员 王迪老师
+
+List of Team Members:
+
+- DU Yu (No.202103180009), Faculty of Computer Science and Technology, QLU(SDAS).
+
+- LI Qinglong (No.202103180027), Faculty of Computer Science and Technology, QLU(SDAS).
+
+- YUAN Hongtai (No.202101020029), Faculty of Computer Science and Technology, QLU(SDAS).
+
+Advising Teacher:
+
+- DR. JIA Ruixiang, Department of Software Engineering, QLU(SDAS).
+
+- DR. WANG Di, National Supercomputing Center in Jinan.
 
 ILP软件系统遵守<b><i>GNU AGPL v3.0</i></b>协议开源，请各软件代码使用者阅读以下声明：
 
@@ -106,7 +122,7 @@ https://github.com/duyu09/Intelligent-Learning-Platform/assets/92843163/959649da
 
 <b>计算机科学与技术学部 山东省计算中心(国家超级计算济南中心).</b>
 
-<b>Faculty of Computer Science and Technology. National Supercomputing Center Jinan.</b>
+<b>Faculty of Computer Science and Technology. National Supercomputing Center in Jinan.</b>
 
 <img src="https://github.com/duyu09/Intelligent-Learning-Platform/assets/92843163/3a31a937-804f-4230-9585-b437430ac950" style="width:55%;border-radius:20px;">
 <br><br>
