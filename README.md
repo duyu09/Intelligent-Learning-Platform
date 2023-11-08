@@ -100,20 +100,20 @@ https://github.com/duyu09/Intelligent-Learning-Platform/assets/92843163/959649da
 
 <b>齐鲁工业大学 (山东省科学院).</b>
 
-<b>Qilu University of Technology (ShanDong Academy of Science).</b>
+<b>Qilu University of Technology (Shandong Academy of Sciences).</b>
 
 <img src="https://user-images.githubusercontent.com/92843163/229986960-05c91bf5-e08e-4bd3-89a4-deee3d2dbc6d.svg" style="width:55%;border-radius:20px;">
 
 <b>计算机科学与技术学部 山东省计算中心(国家超级计算济南中心).</b>
 
-<b>Faculty of Computer Science and Technology, National Supercomputing Center Jinan.</b>
+<b>Faculty of Computer Science and Technology. National Supercomputing Center Jinan.</b>
 
 <img src="https://github.com/duyu09/Intelligent-Learning-Platform/assets/92843163/3a31a937-804f-4230-9585-b437430ac950" style="width:55%;border-radius:20px;">
 <br><br>
 
 <b>齐鲁工业大学 (山东省科学院) 开发者协会.</b>
 
-<b>Developer Association of Qilu University of Technology (ShanDong Academy of Science).
+<b>Developer Association of Qilu University of Technology (Shandong Academy of Sciences).
 
 <img src="https://github.com/duyu09/Intelligent-Learning-Platform/assets/92843163/7a554ca6-49b8-4099-b214-4c4ceff7c9a3" style="width:55%;border-radius:20px;">
 
