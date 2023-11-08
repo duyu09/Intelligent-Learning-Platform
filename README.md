@@ -84,9 +84,9 @@ List of Team Members:
 
 Advising Teacher:
 
-- DR. JIA Ruixiang, Department of Software Engineering, QLU(SDAS).
+- MR. JIA Ruixiang, Department of Software Engineering, QLU(SDAS).
 
-- DR. WANG Di, National Supercomputing Center in Jinan.
+- MRS. WANG Di, National Supercomputing Center in Jinan.
 
 ILP软件系统遵守<b><i>GNU AGPL v3.0</i></b>协议开源，请各软件代码使用者阅读以下声明：
 
