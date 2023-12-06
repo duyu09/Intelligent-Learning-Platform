@@ -21,9 +21,16 @@
 
 &nbsp;&nbsp;&nbsp;&nbsp;近些年，国内大学生普遍存在的迷茫现象一直是社会广泛关注的问题。虽然这些问题一直存在，但不论是家长还是教师，亦或是学生，几乎没有人能够有效地解决这个问题。并且，国内与之相关的软件产品少之又少，这个空白有待软件开发者们去弥补。于是，我们决定直面“迷茫”，以本次2023年第16届中国大学生计算机设计大赛为契机，开发一款针对解决大学生迷茫问题的多功能一站式软件系统，为解决这道“难题”，贡献出我们自己力所能及的力量。
 
+&nbsp;&nbsp;&nbsp;&nbsp;大学生为何迷茫？知己知彼才能百战不殆，我们面向我们身边的同学以及周边多所高等院校的大学生，通过调研，总结并确定了大学生迷茫的原因。我们根据这些原因，开发“我的青春不迷茫-智能学习大平台”这款软件系统，旨在为大学生提供一站式的服务，从不同方面满足大学本科生的需求，帮助他们实现自我提升和规划未来。本项目的开发初衷是为了消除大学生的迷茫，满足大学生对个性化学习、交流、资源共享等方面的需求，减轻他们的学习负担，切实提高学习体验。
+
+&nbsp;&nbsp;&nbsp;&nbsp;大学生迷茫的另一个重要原因在于对未来不确定性的影响，路还很长却不知道怎么走。于是我们应该精准分析每一位学生，不论他们就业也好，考研也罢，软件将告诉他们目前所掌握的知识和技术相当于什么水平，并且根据他们的专业知识掌握水平和欠缺的地方帮助他们制定包含一系列目标的目标清单，为他人生的道路，提供一些建议。
+
+&nbsp;&nbsp;&nbsp;&nbsp;我们的软件系统包括了“我的未来”（基于回归分析的薪资预测与技术差距分析），“小智同学”（基于 ChatGLM-6B 大语言模型的智能百科问答与心理疏导机器人），“社团论坛”（同学们可以自由创建论坛，发表观点，交流技术，切磋学问，了解大学生活），“资源天地”（同学们可以共享学习资源干货），“云端自习”（上自习，也可以适当放松听音乐），“目标清单”和个人主页等7大功能模块。
+
+
 #### 用户运行要求
 
-- Chrome，Microsoft Edge，FireFox，Safari等主流浏览器均可。
+- Chrome，Microsoft Edge，FireFox，Safari等主流浏览器均可；支持PC桌面端与移动端。
 
 - 客户端部署上线地址：http://alpha.ilp.technology (大赛结束，现已失效)
 
@@ -51,6 +58,29 @@
 
 请参见各个模块子目录中的README.md文件。这些文件中将详细描述工程各模块开发与生产的环境要求以及其他必要事项。
 
+#### 系统架构示意图 (请放大查看)
+
+<img alt="0001" src="https://github.com/duyu09/Intelligent-Learning-Platform/assets/92843163/09eddf2e-cd1d-4484-b1a8-65acc708abdb" style="width:31%;">
+
+<img alt="0002" src="https://github.com/duyu09/Intelligent-Learning-Platform/assets/92843163/830b901e-d148-486b-8938-103de46c389c" style="width:31%;">
+
+<img alt="0003" src="https://github.com/duyu09/Intelligent-Learning-Platform/assets/92843163/6239dd60-4764-4102-8396-3ca784863a0c" style="width:31%;">
+
+#### 系统运行前端效果图 (请放大查看)
+
+&nbsp;&nbsp;&nbsp;&nbsp;以下为ILP大平台系统前端界面效果图，分别节选了用户登录、主页、“我的未来”薪资预测系统、小智同学LLM机器人、资源共享平台、云自习室等模块的界面。因仓库体积限制以及时间原因，我们不再展示系统所有模块界面的运行效果。
+
+<img alt="0004" src="https://github.com/duyu09/Intelligent-Learning-Platform/assets/92843163/c5af57cd-f877-40af-a4c2-acfd703ee0fc" style="width:31%;">
+
+<img alt="0005" src="https://github.com/duyu09/Intelligent-Learning-Platform/assets/92843163/56daa734-4c81-4812-a315-ce6bcff3cfdc" style="width:31%;">
+
+<img alt="0006" src="https://github.com/duyu09/Intelligent-Learning-Platform/assets/92843163/a799f2d1-c485-4317-9404-4d68453c8eb8" style="width:31%;">
+
+<img alt="0007" src="https://github.com/duyu09/Intelligent-Learning-Platform/assets/92843163/594cd8ac-b410-472b-bd69-65940b5fe7e9" style="width:31%;">
+
+<img alt="0008" src="https://github.com/duyu09/Intelligent-Learning-Platform/assets/92843163/25b9aea7-a774-4f29-a717-f657a623d6d2" style="width:31%;">
+
+<img alt="0009" src="https://github.com/duyu09/Intelligent-Learning-Platform/assets/92843163/80cc653a-a10f-451e-860b-c5487a8b72ea" style="width:31%;">
 
 #### 系统开发者及著作权声明
 
@@ -100,7 +130,7 @@ ILP软件系统遵守<b><i>GNU AGPL v3.0</i></b>协议开源，请各软件代�
 
 - __*This project has participated in the 16th Chinese Collegiate Computing Competition (CCCC, 4C) in 2023.*__
 
-- __*Any organization or individual must comply with the AGPL-v3.0 license: commercial use or participation in any kind of competition while keeping the source code closed is prohibited. Individuals using all or part of this software's source code are required to prominently display the copyright notice and code resource reference of this software (ILP Platform) in the development documentation as well as in the distribution of their work or product. In case of any violation by individuals or organizations mentioned above, the development team will inform the organizing committee or university of the competition they participated in, recommending the cancellation of their results and imposing penalties for infringement and plagiarism. In severe cases, the development team will initiate legal proceedings, and the infringer will bear the maximum civil liability as prescribed by the laws and regulations of the People's Republic of China. If any violation involves the Criminal Law of the People's Republic of China, the development team will report it to the Chinese public security authorities for serious handling and actively cooperate with the criminal investigation.*__
+- __*Any organization or individual must comply with the AGPL-v3.0 license: it prohibits closed-source commercial use or participation in any form of competition with closed-source components. Individuals using any portion or all of the source code are required to prominently display the copyright notice of this software (ILP Platform) in the development documentation, as well as in the distribution of works or products, and indicate the location of the code resources reference. In the event of any violation by an individual or entity, the development team will notify the organizing committee or university of the competition in which they participated, recommending the cancellation of their results and penalties for infringement and plagiarism. In severe cases, the development team will initiate legal proceedings, and the infringer will bear the maximum civil liability under the laws and regulations of the People's Republic of China. If the violation involves the Criminal Law of the People's Republic of China, the development team will report it to the Chinese public security authorities for serious investigation and actively cooperate with the criminal investigation.*__
 
 - __*By cloning (or obtaining in any other way) all or part of the source code of this project, it signifies that you are aware of and fully understand all the aforementioned terms and the entire content of the AGPL-v3.0 license.*__
 
@@ -132,6 +162,18 @@ https://github.com/duyu09/Intelligent-Learning-Platform/assets/92843163/959649da
 <b>Developer Association of Qilu University of Technology (Shandong Academy of Sciences).
 
 <img src="https://github.com/duyu09/Intelligent-Learning-Platform/assets/92843163/7a554ca6-49b8-4099-b214-4c4ceff7c9a3" style="width:55%;border-radius:20px;">
+
+#### 友情链接
+
+- 齐鲁工业大学(山东省科学院) https://www.qlu.edu.cn/
+  
+- 山东省计算中心(国家超级计算济南中心) https://www.nsccjn.cn/
+
+- 齐鲁工业大学(山东省科学院) 计算机科学与技术学部 http://jsxb.scsc.cn/
+
+- DuYu的个人网站 https://www.duyu09.site/
+
+- DuYu的GitHub账号 https://github.com/duyu09/
 
 ### 访客统计
 
