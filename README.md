@@ -98,7 +98,7 @@ ILP软件系统遵守<b><i>GNU AGPL v3.0</i></b>协议开源，请各软件代�
 
 以下翻译仅供参考，最终以上文中文为准。*(The following translation is for reference only, and the Chinese version above shall prevail.)*
 
-- __*This project has participated in the 16th China College Student Computer Design Contest in 2023.*__
+- __*This project has participated in the 16th Chinese Collegiate Computing Competition (CCCC, 4C) in 2023.*__
 
 - __*Any organization or individual must comply with the AGPL-v3.0 license: commercial use or participation in any kind of competition while keeping the source code closed is prohibited. Individuals using all or part of this software's source code are required to prominently display the copyright notice and code resource reference of this software (ILP Platform) in the development documentation as well as in the distribution of their work or product. In case of any violation by individuals or organizations mentioned above, the development team will inform the organizing committee or university of the competition they participated in, recommending the cancellation of their results and imposing penalties for infringement and plagiarism. In severe cases, the development team will initiate legal proceedings, and the infringer will bear the maximum civil liability as prescribed by the laws and regulations of the People's Republic of China. If any violation involves the Criminal Law of the People's Republic of China, the development team will report it to the Chinese public security authorities for serious handling and actively cooperate with the criminal investigation.*__
 
