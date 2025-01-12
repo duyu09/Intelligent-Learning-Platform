@@ -4,19 +4,17 @@
 </p>
 <br>
 
-## Intelligent Learning Platform Based on LLM and Regression Analysis Algorithms
+# Intelligent Learning Platform Based on LLM and Regression Analysis Algorithms
 
-------
-
-#### Language of this document
+### Language of this document
 
 [简体中文](https://github.com/duyu09/Intelligent-Learning-Platform/blob/main/README.md) | [English](https://github.com/duyu09/Intelligent-Learning-Platform/blob/main/README_en.md)
 
-#### System Name
+### Project Name
 
 - System Project Name: Intelligent Learning Platform Based on LLM & Regression Analysis Algorithms. (Abbreviation: _ILP_)
 
-#### Project Introduction
+### Project Introduction
 
 &nbsp;&nbsp;&nbsp;&nbsp;In recent years, the widespread phenomenon of confusion among college students in China has been a topic of societal concern. While these issues have persisted, neither parents, teachers, nor students have been able to effectively address them. Moreover, there are very few software products related to this issue in China, and this gap is yet to be filled by software developers. Therefore, we decided to directly face the “confusion” and, taking advantage of the 16th China Collegiate Computing Competition in 2023, develop a multi-functional, one-stop software system aimed at solving the confusion problem faced by college students, contributing our efforts to this challenge.
 
@@ -26,7 +24,7 @@
 
 &nbsp;&nbsp;&nbsp;&nbsp;The software system includes seven major modules: “My Future” (Salary Prediction and Skill Gap Analysis based on Regression Analysis), “Friend Xiao Zhi” (an intelligent Q&A and psychological counseling chatbot based on the ChatGLM-6B large language model), “Club Forum” (where students can freely create forums, share opinions, exchange ideas, discuss techniques, and understand college life), “Resource Center” (where students can share study resources), “Cloud Study Room” (where students can study and also relax with music), “Goal List,” and personal profiles.
 
-#### User Requirements
+### User Requirements
 
 - Supported browsers: Chrome, Microsoft Edge, FireFox, Safari, and other mainstream browsers; works on both PC desktop and mobile devices.
 
@@ -34,7 +32,7 @@
 
 - Admin system deployment URL: http://admin.ilp.technology (Link expired after the competition)
 
-#### Project Directory Structure
+### Project Directory Structure
 
 - *ILP大平台前端模块*: Related code for the system's frontend
 
@@ -44,17 +42,17 @@
 
 - *ILP大平台后台管理系统*: Frontend and Java backend code for the admin system
 
-#### Developer Environment Requirements
+### Developer Environment Requirements
 
 &nbsp;&nbsp;&nbsp;&nbsp;All development work by our team members was conducted in a Windows environment. The IDEs used include JetBrains IDEA, WebStorm, Visual Studio Code, and others. The specific requirements for the development environment can be found in the README.md files in each subdirectory.
 
-#### System Architecture and Deployment Methods
+### System Architecture and Deployment Methods
 
 &nbsp;&nbsp;&nbsp;&nbsp;During the competition, the system adopted a three-end interconnected dual-end deployment architecture, with the Java backend, database, and SSR frontend running on a CPU cloud server, while the ChatGLM-6B large language model and salary prediction model were deployed on the National Supercomputing Center in Jinan's high-performance computing cluster.
 
 Please refer to the README.md files in each module subdirectory for detailed information about the development and production environment requirements.
 
-#### System Architecture Diagram (Please zoom in to view)
+### System Architecture Diagram (Please zoom in to view)
 
 <img alt="0001" src="https://github.com/duyu09/Intelligent-Learning-Platform/assets/92843163/09eddf2e-cd1d-4484-b1a8-65acc708abdb" style="width:31%;">
 
@@ -62,7 +60,7 @@ Please refer to the README.md files in each module subdirectory for detailed inf
 
 <img alt="0003" src="https://github.com/duyu09/Intelligent-Learning-Platform/assets/92843163/6239dd60-4764-4102-8396-3ca784863a0c" style="width:31%;">
 
-#### Frontend Screenshots of the System (Please zoom in to view)
+### Frontend Screenshots of the System (Please zoom in to view)
 
 &nbsp;&nbsp;&nbsp;&nbsp;The following are screenshots of the ILP platform’s frontend interface, including login, homepage, "My Future" salary prediction system, Xiao Zhi chatbot, resource sharing platform, and cloud study room modules. Due to repository size limits and time constraints, not all module interfaces are shown.
 
@@ -78,7 +76,7 @@ Please refer to the README.md files in each module subdirectory for detailed inf
 
 <img alt="0009" src="https://github.com/duyu09/Intelligent-Learning-Platform/assets/92843163/80cc653a-a10f-451e-860b-c5487a8b72ea" style="width:31%;">
 
-#### Developer and Copyright Statement
+### Developer and Copyright Statement
 
 &copy; 2023 *Intelligent Learning Platform Based on LLM and Regression Analysis Algorithms* Project Research and Development Team.
 
@@ -112,13 +110,13 @@ The ILP software system follows the <b><i>GNU AGPL v3.0</i></b> open-source lice
 
 ------
 
-#### ILP Software System Explanation and Demo Video
+### ILP Software System Explanation and Demo Video
 
 https://github.com/duyu09/Intelligent-Learning-Platform/assets/92843163/959649da-8741-4d1a-946c-1e94b5d67d45
 
 ------
 
-#### Special Thanks
+### Special Thanks
 
 <b>Qilu University of Technology (Shandong Academy of Sciences).</b>
 
@@ -133,7 +131,7 @@ https://github.com/duyu09/Intelligent-Learning-Platform/assets/92843163/959649da
 
 <img src="https://github.com/duyu09/Intelligent-Learning-Platform/assets/92843163/7a554ca6-49b8-4099-b214-4c4ceff7c9a3" style="width:55%;border-radius:20px;">
 
-#### Links
+### Links
 
 - Qilu University of Technology (Shandong Academy of Sciences) [https://www.qlu.edu.cn/](https://www.qlu.edu.cn/)
   
@@ -143,7 +141,7 @@ https://github.com/duyu09/Intelligent-Learning-Platform/assets/92843163/959649da
 
 - DuYu’s GitHub Account [https://github.com/duyu09/](https://github.com/duyu09/)
 
-#### Visitor Statistics
+### Visitor Statistics
 
 <div><b>Number of Total Visits (All of Duyu09's GitHub Projects): </b><br><img src="https://profile-counter.glitch.me/duyu09/count.svg" /></div> 
 
